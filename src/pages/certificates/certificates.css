@@ -1,0 +1,37 @@
+div#content {
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+div#certificates {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+div#certificates iframe {
+    width: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+    div#content {
+        align-items: start;
+    }
+
+    div#certificates {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
