@@ -24,6 +24,12 @@ div {
     gap: 1rem;
 }
 
+iframe {
+    width: 100%;
+    min-height: 100%;
+    border: none;
+}
+
 p {
     font-family: "Inter", sans-serif;
     font-style: normal;
