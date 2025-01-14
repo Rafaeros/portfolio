@@ -1,0 +1,36 @@
+body {
+    overflow: hidden;
+}
+
+div#navigation-bar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    box-shadow: 0px 5px 5px var(--dark);
+}
+
+div#navigation-bar nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+div#navigation-bar nav ul li a {
+    width: 6rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    div#navigation-bar nav ul {
+        gap: 3rem;
+    }
+
+    div#navigation-bar nav ul li a {
+        width: 10rem;
+        padding: 1rem;
+    }
+    
+}

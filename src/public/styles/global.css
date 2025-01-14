@@ -1,0 +1,113 @@
+/* Variables */
+:root {
+    --dark-blue: #001F3F;
+    --light-blue: #7C93C3;
+    --white: #FBFBFB;
+    --dark: #31363F;
+}
+
+/* Globals */
+
+body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+div {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+iframe {
+    width: 100%;
+    min-height: 100%;
+    border: none;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1rem;
+    color: var(--dark);
+    width: 100%;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1rem;
+    color: var(--dark);
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1rem;
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+a {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: var(--light-blue);
+    color: #000;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5rem;
+        color: var(--dark);
+        width: 100%;
+        padding: 10px;
+    }
+    
+    h3 {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1rem;
+        color: var(--dark);
+    }
+    
+    a {
+        font-size: 24px;
+        line-height: 1rem;
+    }
+}
